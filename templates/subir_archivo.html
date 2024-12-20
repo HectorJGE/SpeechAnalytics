@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+{% block contenido %}
+    <div class="w-50 mx-auto p-4">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+              <textarea name="texto" class="form-control" placeholder="Escriba el texto aqui" id="floatingTextarea2" style="height: 200px"></textarea>
+              <label for="floatingTextarea2">Escriba aqui el texto</label>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="text-warning form-label">O seleccione un archivo de texto ( .txt )</label>
+              <input class="form-control" accept=".txt" type="file" id="formFile" onchange="loadFile(event)">
+            </div>
+            <button type="submit" class="btn  icon-link icon-link-hover btn-warning" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" >
+                <i class="bi fa-regular fa-floppy-disk"></i>
+                Guardar
+            </button>
+        </form>
+        <script>
+            function loadFile(event) {
+                const file = event.target.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    document.getElementById('floatingTextarea2').value = e.target.result;
+                };
+
+                // Lee el archivo como texto
+                reader.readAsText(file);
+            }
+        </script>
+    </div>
+{% endblock %}

@@ -1,0 +1,137 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 7,
+        "fields": {
+            "lexema": "cállate",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 8,
+        "fields": {
+            "lexema": "ignorar",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 9,
+        "fields": {
+            "lexema": "inútil",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 10,
+        "fields": {
+            "lexema": "estúpido",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 11,
+        "fields": {
+            "lexema": "incapaz",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 12,
+        "fields": {
+            "lexema": "tonto",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 13,
+        "fields": {
+            "lexema": "ridículo",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 14,
+        "fields": {
+            "lexema": "incompetente",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 15,
+        "fields": {
+            "lexema": "patético",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 16,
+        "fields": {
+            "lexema": "imbécil",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 17,
+        "fields": {
+            "lexema": "inepto",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 18,
+        "fields": {
+            "lexema": "insuficiente",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 19,
+        "fields": {
+            "lexema": "grosero",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 20,
+        "fields": {
+            "lexema": "despreciable",
+            "token": 2,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 21,
+        "fields": {
+            "lexema": "mediocre",
+            "token": 2,
+            "ponderacion": 0
+        }
+    }
+]

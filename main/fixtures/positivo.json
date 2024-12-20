@@ -1,0 +1,155 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 22,
+        "fields": {
+            "lexema": "Excelente",
+            "token": 0,
+            "ponderacion": 5
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 23,
+        "fields": {
+            "lexema": "Fantástico",
+            "token": 0,
+            "ponderacion": 5
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 24,
+        "fields": {
+            "lexema": "Perfecto",
+            "token": 0,
+            "ponderacion": 5
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 25,
+        "fields": {
+            "lexema": "Genial",
+            "token": 0,
+            "ponderacion": 4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 26,
+        "fields": {
+            "lexema": "Maravilloso",
+            "token": 0,
+            "ponderacion": 4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 27,
+        "fields": {
+            "lexema": "Increíble",
+            "token": 0,
+            "ponderacion": 4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 28,
+        "fields": {
+            "lexema": "Estupendo",
+            "token": 0,
+            "ponderacion": 4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 29,
+        "fields": {
+            "lexema": "Satisfactorio",
+            "token": 0,
+            "ponderacion": 3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 30,
+        "fields": {
+            "lexema": "Bueno",
+            "token": 0,
+            "ponderacion": 3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 31,
+        "fields": {
+            "lexema": "Positivo",
+            "token": 0,
+            "ponderacion": 3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 32,
+        "fields": {
+            "lexema": "Agradable",
+            "token": 0,
+            "ponderacion": 3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 33,
+        "fields": {
+            "lexema": "Aceptable",
+            "token": 0,
+            "ponderacion": 2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 34,
+        "fields": {
+            "lexema": "Correcto",
+            "token": 0,
+            "ponderacion": 2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 35,
+        "fields": {
+            "lexema": "Conveniente",
+            "token": 0,
+            "ponderacion": 2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 36,
+        "fields": {
+            "lexema": "Normal",
+            "token": 0,
+            "ponderacion": 1
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 37,
+        "fields": {
+            "lexema": "Adecuado",
+            "token": 0,
+            "ponderacion": 1
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 38,
+        "fields": {
+            "lexema": "Bien",
+            "token": 0,
+            "ponderacion": 1
+        }
+    }
+]

@@ -1,0 +1,53 @@
+{% extends 'home.html' %}
+{% block contenido %}
+    <div class="w-50 mx-auto">
+    <table class="table">
+      <thead>
+        <colgroup>
+            <col style="width: 85%" class="bg-warning">
+            <col style="width: 10%">
+        </colgroup>
+        <tr>
+          <th scope="col">Texto</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for texto in textos %}
+            <tr>
+              <td>{{ texto.texto|truncatewords:22 }}</td>
+              <td class="text-center">
+                <form method="post" action="{% url 'borrar.texto' texto.pk %}">
+                  {% csrf_token %}
+                  <button
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Borrar"
+                    type="submit" class="btn icon-link link-warning link-underline-opacity-0 icon-link-hover"
+                    style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                      <i class="bi far fa-trash-alt"></i>
+                  </button>
+                </form>
+                <a href="{% url 'detalle.texto' texto.pk %}">
+                    <button
+                        data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Detalle"
+                        type="button" class="btn icon-link link-warning link-underline-opacity-0 icon-link-hover"
+                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                          <i class="bi fas fa-search"></i>
+                    </button>
+                </a>
+              </td>
+            </tr>
+        {% empty %}
+            <tr>
+              <td class="text-center">
+                No hay ningun texto cargado.
+                <a class="nav-link icon-link link-warning icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="{% url 'subir.texto' %}">
+                    <i class="bi fa-solid fa-paperclip"></i>Subir Texto
+                </a>
+              </td>
+              <td></td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+{% endblock %}

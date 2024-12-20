@@ -1,0 +1,173 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 39,
+        "fields": {
+            "lexema": "No",
+            "token": 1,
+            "ponderacion": -1
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 40,
+        "fields": {
+            "lexema": "Nunca",
+            "token": 1,
+            "ponderacion": -2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 41,
+        "fields": {
+            "lexema": "Imposible",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 42,
+        "fields": {
+            "lexema": "Error",
+            "token": 1,
+            "ponderacion": -4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 43,
+        "fields": {
+            "lexema": "Problema",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 44,
+        "fields": {
+            "lexema": "Queja",
+            "token": 1,
+            "ponderacion": -2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 45,
+        "fields": {
+            "lexema": "Insatisfecho",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 46,
+        "fields": {
+            "lexema": "Fallo",
+            "token": 1,
+            "ponderacion": -4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 47,
+        "fields": {
+            "lexema": "Frustrado",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 48,
+        "fields": {
+            "lexema": "Descontento",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 49,
+        "fields": {
+            "lexema": "Inconveniente",
+            "token": 1,
+            "ponderacion": -2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 50,
+        "fields": {
+            "lexema": "Desastre",
+            "token": 1,
+            "ponderacion": -5
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 51,
+        "fields": {
+            "lexema": "Mal",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 52,
+        "fields": {
+            "lexema": "Confusión",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 53,
+        "fields": {
+            "lexema": "Tardanza",
+            "token": 1,
+            "ponderacion": -2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 54,
+        "fields": {
+            "lexema": "Desaparecido",
+            "token": 1,
+            "ponderacion": -4
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 55,
+        "fields": {
+            "lexema": "Incertidumbre",
+            "token": 1,
+            "ponderacion": -3
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 56,
+        "fields": {
+            "lexema": "Negativa",
+            "token": 1,
+            "ponderacion": -2
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 57,
+        "fields": {
+            "lexema": "Desaprobación",
+            "token": 1,
+            "ponderacion": -3
+        }
+    }
+]

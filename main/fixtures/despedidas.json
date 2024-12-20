@@ -1,0 +1,83 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 67,
+        "fields": {
+            "lexema": "adiós",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 68,
+        "fields": {
+            "lexema": "chao",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 69,
+        "fields": {
+            "lexema": "bye",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 70,
+        "fields": {
+            "lexema": "chau",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 71,
+        "fields": {
+            "lexema": "hasta luego",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 72,
+        "fields": {
+            "lexema": "suerte",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 73,
+        "fields": {
+            "lexema": "venga",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 74,
+        "fields": {
+            "lexema": "cuídate",
+            "token": 4,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 75,
+        "fields": {
+            "lexema": "hablamos",
+            "token": 4,
+            "ponderacion": 0
+        }
+    }
+]

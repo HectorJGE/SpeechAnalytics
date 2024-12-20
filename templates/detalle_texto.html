@@ -1,0 +1,242 @@
+{% extends 'home.html' %}
+{% block contenido %}
+    <div class="vh-100 row p-4">
+        <div class="col h-100">
+            <div
+                class="w-100 card bg-body-secondary text-xs mh-100 overflow-y-auto">
+                <div class="card-header">
+                    <h6 class="card-title m-0">Conversación</h6>
+                </div>
+                <div class="w-100 card-body mh-100 overflow-y-auto">
+                    {{ texto.get_text_formatted|safe|linebreaks }}
+                </div>
+            </div>
+
+        </div>
+        <div class="col h-100 d-flex flex-column gap-3">
+          <div class="flex-grow-1 bg-body-secondary shadow card">
+              <div class="card-header">
+                <h6 class="card-title m-0">Análisis</h6>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col"><span class="fw-medium">Sentimiento General: {{ sentimiento|safe }} ( {{ indice_ponderado }} )</span></div>
+                    <div class="col"><span class="fw-medium">Uso de palabras rudas </span>{{ lenguaje_rudo|safe }}</div>
+                    <div class="col"><span class="fw-medium">Identificación cliente </span>{{ identificacion_cliente|safe }}</div>
+                </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col">
+                        <h6 class="fw-medium"><i class="fas fa-hands-helping"></i> Saludo</h6>
+                        <ul class="mb-0">
+                            <li><span class="fw-medium">Agente </span>  {{ saludo_agente|safe }}</li>
+                            <li><span class="fw-medium">Cliente </span> {{ saludo_cliente|safe }}</li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="fw-medium"><i class="fas fa-hand-peace"></i> Despedida</h6>
+                        <ul class="mb-0">
+                            <li><span class="fw-medium">Agente </span> {{ despedida_agente|safe }}</li>
+                            <li><span class="fw-medium">Cliente </span> {{ despedida_cliente|safe }}</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <div class="col">
+                        <h6 class="fw-medium"><i class="fas fa-angle-double-up"></i> Palabra mas positiva</h6>
+                        <ul>
+                            <li><span class="fw-medium">Agente: </span>  {{ pal_pos_max_1 }}</li>
+                            <li><span class="fw-medium">Cliente: </span> {{ pal_pos_max_2 }}</li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="fw-medium"><i class="fas fa-angle-double-down"></i> Palabra más negativa</h6>
+                        <ul>
+                            <li><span class="fw-medium">Agente: </span> {{ pal_neg_max_1 }}</li>
+                            <li><span class="fw-medium">Cliente: </span> {{ pal_neg_max_2 }}</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="d-flex flex-grow-1 gap-3">
+            <div class="w-50 bg-body-secondary card">
+                <div class="card-header">
+                    <h6 class="card-title m-0">Proporción positivas - negativas</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="myChart" height="100" width="100"></canvas>
+                </div>
+            </div>
+            <div class="w-50 bg-body-secondary card">
+                <div class="card-header">
+                    <h6 class="card-title m-0">Grafico lineal de sentimiento</h6>
+                </div>
+                <div class="card-body">
+                    <canvas id="linearPositivityChart" height="100" width="100"></canvas>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="my-4 p-4">
+        <div class="bg-body-secondary card">
+            <div class="card-header">
+                <h6 class="card-title m-0">Lexemas encontrados</h6>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered" id="miTabla">
+                  <thead>
+                    <tr class="text-center">
+                      <th class="bg-body-secondary">Token</th>
+                      <th class="bg-body-secondary">Lexema</th>
+                      <th class="bg-body-secondary">Ponderacion</th>
+                      <th class="bg-body-secondary">Accion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for lexema, ponderacion, token, id in tabla %}
+                    <tr class="text-center">
+                      <th scope="row">{{ token }}</th>
+                      <td>{{ lexema }}</td>
+                      <td>{{ ponderacion }}</td>
+                      <td>
+                          {% if id is None %}
+                              <a href="{% url 'agregar.correspondencia' %}?lexema={{ lexema }}&ponderacion={{ ponderacion }}&token={{ token }}&pk_texto={{ object.id }}">
+                                  <button class="btn btn-primary btn-sm">Agregar</button>
+                              </a>
+                          {% else %}
+                              <a href="{% url 'editar.correspondencia' id %}?pk_texto={{ object.id }}">
+                                <button class="btn btn-secondary btn-sm">Editar</button>
+                              </a>
+                              <a href="{% url 'eliminar.correspondencia' id %}?pk_texto={{ object.id }}">
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                              </a>
+                          {% endif %}
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block extrajs %}
+    <script>
+        $(document).ready(function() {
+            $('#miTabla').DataTable({
+                paging: true,
+                searching: true,
+                ordering: true,
+                responsive: true,
+                language: {
+                    search: "Buscar:",
+                    lengthMenu: "Mostrar _MENU_ entradas",
+                    info: "Mostrando _START_ a _END_ de _TOTAL_ entradas",
+                    paginate: {
+                        first: "Primero",
+                        last: "Último",
+                        next: "Siguiente",
+                        previous: "Anterior",
+                    },
+                },
+                columnDefs: [
+                    { width: "25%", targets: 0 },
+                    { width: "50%", targets: 1 },
+                    { width: "10%", targets: 2 },
+                    { width: "15%", targets: 3 },
+                ]
+            });
+        });
+
+        const labels_linear_pos = {{ labels_linear_positivity|safe }};
+        const data_linear_pos = {{ data_linear_positivity|safe }};
+
+        const positiveWords = {{ cant_palabras_pos }};
+        const negativeWords = {{ cant_palabras_neg }};
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const donutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels:[
+                    `Palabras Positivas (${positiveWords})`,
+                    `Palabras Negativas (${negativeWords})`
+                ],
+                datasets: [{
+                    label: 'Cantidad de Palabras',
+                    data: [positiveWords, negativeWords],
+                    backgroundColor: ['#549958', '#EF5350'],
+                    borderColor: '#B0BEC5',
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: '#B0BEC5',
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                const label = tooltipItem.label || '';
+                                const value = tooltipItem.raw || 0;
+                                return `${label}: ${value}`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        const ctx_linear_pos = document.getElementById('linearPositivityChart').getContext('2d');
+        new Chart(ctx_linear_pos, {
+            type: 'line',
+            data: {
+                labels: labels_linear_pos,
+                datasets: [{
+                    label: 'nivel de positividad',
+                    data: data_linear_pos,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderWidth: 2,
+                    tension: 0,
+                    fill: false,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: 'white',
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: 'white',
+                            stepSize: 1
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.2)' // Color de las líneas de la cuadrícula
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

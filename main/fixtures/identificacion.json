@@ -1,0 +1,83 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 58,
+        "fields": {
+            "lexema": "Con quién tengo el gusto de hablar",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 59,
+        "fields": {
+            "lexema": "Me puede confirmar su nombre completo por favor",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 60,
+        "fields": {
+            "lexema": "Cuál es su número de identificación o documento",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 61,
+        "fields": {
+            "lexema": "Cómo puedo llamarle",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 62,
+        "fields": {
+            "lexema": "Podría indicarme el nombre bajo el cual está registrada su cuenta",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 63,
+        "fields": {
+            "lexema": "Puede proporcionarme su número de cliente",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 64,
+        "fields": {
+            "lexema": "Me confirma la dirección de correo electrónico asociada a su cuenta",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 65,
+        "fields": {
+            "lexema": "Cuál es su número de teléfono, por favor",
+            "token": 5,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 66,
+        "fields": {
+            "lexema": "Para verificar su identidad",
+            "token": 5,
+            "ponderacion": 0
+        }
+    }
+]

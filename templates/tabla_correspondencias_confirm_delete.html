@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+{% block contenido %}
+    <div class="w-50 mx-auto p-4">
+        <h2>¿Estás seguro de que deseas eliminar esta correspondencia?</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="alert alert-warning">
+                <strong>Advertencia:</strong> Esta acción eliminará permanentemente la correspondencia.
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <a href="{% url 'detalle.texto' request.GET.pk_texto %}" class="btn btn-secondary m-2">
+                    <i class="bi fas fa-arrow-left"></i> Volver
+                </a>
+                <button type="submit" class="btn btn-danger m-2">
+                    <i class="bi fas fa-trash"></i> Eliminar
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

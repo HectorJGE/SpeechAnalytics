@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Hector Gimenez</title>
+    <link rel="icon" href="{% static 'comment-dots.svg' %}" type="image/x-icon">
+    <link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet" >
+    <link rel="stylesheet" href="{% static '@fortawesome/fontawesome-free/css/all.min.css' %}" />
+    <link href="{% static 'datatables.net-bs5/css/dataTables.bootstrap5.min.css' %}">
+
+</head>
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container-fluid p-2">
+        <a class="navbar-brand text-light" href="#">Speech Analytic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link icon-link link-warning icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="{% url 'subir.texto' %}">
+                   <i class="bi fa-solid fa-paperclip"></i> Subir Texto
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link icon-link link-warning icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="{% url 'lista.textos' %}">
+                   <i class="bi fas fa-book"></i>Textos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-auto">
+        {% block contenido %}
+        {% endblock %}
+    </div>
+    <script src="{% static 'chart.js/dist/chart.umd.js' %}"></script>
+    <script src="{% static 'bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'datatables.net/js/dataTables.min.js' %}"></script>
+    <script src="{% static 'datatables.net-bs5/js/dataTables.bootstrap5.min.js' %}"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    {% block extrajs %}
+    {% endblock %}
+    <style>
+        .text-yelighth {
+            color: #ffe082;
+        }
+    </style>
+</body>
+</html>

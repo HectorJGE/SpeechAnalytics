@@ -1,0 +1,56 @@
+[
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 1,
+        "fields": {
+            "lexema": "hola",
+            "token": 3,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 2,
+        "fields": {
+            "lexema": "buenas",
+            "token": 3,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 3,
+        "fields": {
+            "lexema": "saludos",
+            "token": 3,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 4,
+        "fields": {
+            "lexema": "hey",
+            "token": 3,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 5,
+        "fields": {
+            "lexema": "hello",
+            "token": 3,
+            "ponderacion": 0
+        }
+    },
+    {
+        "model": "main.tablacorrespondencias",
+        "pk": 6,
+        "fields": {
+            "lexema": "aló",
+            "token": 3,
+            "ponderacion": 0
+        }
+    }
+]
