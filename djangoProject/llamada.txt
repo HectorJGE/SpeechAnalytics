@@ -1,0 +1,116 @@
+
+[Orador 1] Hola Gracias por llamar a Servicios de Internet. Soy Chalene. ¿Cómo puedo ayudarte hoy?
+
+[Orador 2] Hola, Soy Linda. Nuestro internet dejó de funcionar desde las 9 y tengo una clase en línea a las 2. Así que necesito que arreglen el internet ahora mismo.
+
+[Orador 1] Bueno, gracias por informarnos de esto de inmediato, Linda, para que pueda ayudarte a volver a estar en línea lo antes posible. ¿Podrías darme el número de teléfono asociado a tu servicio de internet?
+
+[Orador 2] El número de teléfono es 855-3232.
+
+[Orador 1] Gracias. Entonces, es 855-3232. Correcto.
+
+¿Y puedes confirmar el nombre de la cuenta, por favor?
+
+[Orador 2] Es Linda Bloom. Soy yo.
+
+[Orador 1] Muchas gracias.
+
+[Orador 2] De nada.
+
+[Orador 1] Linda, ¿estás cerca de tu módem ahora mismo?.
+
+[Orador 2] Sí, estoy sentada al lado. ¿Qué quieres que haga?
+
+[Orador 1] Bien, genial. Primero, vamos a revisar las luces en tu módem. ¿Puedes decirme qué luces están encendidas ahora mismo?
+
+[Orador 2] Las luces parecen normales, como si el servicio estuviera funcionando.
+
+[Orador 1] Gracias. Eso es interesante. Permíteme realizar una verificación rápida de la línea para confirmar la conectividad del módem, ¿de acuerdo?
+
+[Orador 2] De acuerdo.
+
+[Orador 1] Linda, ¿han experimentado alguna fluctuación en la electricidad o algo parecido?
+
+[Orador 2] No.
+
+[Orador 1] ¿Algún corte de energía recientemente?
+
+[Orador 2] No.
+
+[Orador 1] De acuerdo. Gracias por confirmar eso. Acabo de recibir los resultados, y el módem muestra que tiene conexión desde nuestro lado hacia ese módem.
+
+Por eso las luces parecen normales, como si estuviera funcionando. Ahora, vamos a verificar y asegurarnos de que este módem esté recibiendo el servicio de internet.
+
+[Orador 2] De acuerdo. ¿Qué quieres que haga?
+
+[Orador 1] Linda, permíteme confirmar esto. ¿La computadora que estás usando para acceder a internet está conectada por Wi-Fi o está conectada directamente al módem o router por cable?
+
+[Orador 2] Es una computadora de escritorio, así que está conectada por cable.
+
+[Orador 1] Entiendo. Gracias. Linda, también quiero saber si tienes otros dispositivos en tu casa que estén conectados a tu internet doméstico.
+
+[Orador 2] Sí. Tengo dos teléfonos y una laptop.
+
+[Orador 1] ¿Tampoco pueden conectarse a internet?
+
+[Orador 2] Sí. Ninguno de ellos tiene internet. No hay servicio.
+
+[Orador 1] Entiendo. ¿Has intentado reiniciar tu módem o router?
+
+[Orador 2] No. Quise llamarlos primero. No quiero causar ningún problema.
+
+[Orador 1] De acuerdo. Bien. En este momento, Linda, necesitaré tu ayuda para verificar la conexión física, como el cable que va desde la parte trasera de tu módem o router hasta la computadora que estás usando, solo para asegurarnos de que ambos extremos estén bien ajustados y no flojos, ¿de acuerdo?
+
+[Orador 2] Está bien. Espera. Déjame revisar.
+
+[Orador 1] Sí.
+
+[Orador 2] Ambos extremos están bien conectados, no están flojos.
+
+[Orador 1] Genial. Gracias. Linda, casi terminamos.
+
+Ahora, vamos a reiniciar tu módem o router. Solo necesitamos desconectarlo de la corriente y, una vez desconectado, debemos esperar de 20 a 30 segundos y luego volver a conectarlo, ¿de acuerdo?
+
+[Orador 2] De acuerdo. Ya lo apagué.
+
+[Orador 1] Bien, genial. Esperaremos 30 segundos.
+
+[Orador 2] Está bien. Es un trabajo difícil, ¿eh?
+
+[Orador 1] Sí, a veces es un desafío. Aunque disfruto haciéndolo.
+
+[Orador 2] Eso está bien.
+
+[Orador 1] De acuerdo. Creo que ya han pasado 30 segundos, así que puedes volver a encenderlo ahora. Luego esperaremos a que las luces normales vuelvan a encenderse.
+
+Después de eso, verificaremos si tenemos conectividad a internet, ¿de acuerdo?
+
+[Orador 2] Seguro. Bueno, las luces están encendiendo ahora, y creo que el internet ha vuelto. Estoy recibiendo un montón de correos electrónicos ahora.
+
+[Orador 1] Genial.
+
+[Orador 2] Espera. Déjame revisar mi PC.
+
+[Orador 1] Sí, claro.
+
+[Orador 2] De acuerdo. Mi computadora también está funcionando. Genial.
+
+Creo que todo está bien. Muchas gracias por tu ayuda, Jolene. Por cierto, ¿es necesario hacer esto de vez en cuando?
+
+[Orador 1] Sí, puedes hacerlo de vez en cuando. De alguna manera, los dispositivos electrónicos no están hechos para estar funcionando constantemente todo el tiempo. Y el ciclo de encendido ayuda mucho porque cuando dejas tu módem encendido por mucho tiempo, tiende a dejar de funcionar al máximo de su capacidad después de un tiempo.
+
+Así que reiniciar tu módem puede solucionar los problemas de conexión a internet, mejorar las conexiones lentas y resolver problemas con la red inalámbrica, que también afectan tu servicio de TV digital o servicios de streaming como Netflix, Amazon TV o Apple TV, que se transmiten a través de la conexión a internet. Así que, al desenchufar el cable de alimentación de la parte trasera del módem o router, le estás dando el respiro que necesita.
+
+[Orador 2] Oh, ya veo. Bueno, gracias por informarme. Nunca lo había pensado.
+
+[Orador 1] De nada, Linda. Estoy muy contenta de haber podido ayudarte a volver a estar en línea y quitarte esta preocupación de encima hoy. Así puedes concentrarte en tu clase en línea más tarde, también.
+
+[Orador 2] Oh, querida. Me salvaste el día.
+
+[Orador 1] Y tú hiciste mi día, Linda. Gracias por colaborar conmigo. ¿Hay algo más en lo que pueda asistirte?
+
+[Orador 2] No, ya cubriste todo lo que necesito.
+
+[Orador 1] De acuerdo. Muchas gracias por elegir Servicios de Internet. Adiós.
+
+[Orador 2] Adiós.
